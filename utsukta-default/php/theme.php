@@ -3,7 +3,7 @@
 /**
  *   * Name: Utsukta Default
  *   * Description: Utsukta hub default theme
- *   * Version: 0.1
+ *   * Version: 0.1 alpha
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
  *   * Author: Saiwal
