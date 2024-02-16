@@ -1,8 +1,8 @@
 <?php
 
 /**
- *   * Name: Utsukta Default
- *   * Description: Utsukta hub default theme
+ *   * Name: Bootswatched
+ *   * Description: Bootstrap/Bootswatch theme
  *   * Version: 0.1
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
@@ -16,7 +16,7 @@
 // If you change the name of the theme to `yournewname` change `redbasicchild_init` to `yournewname_init` so it has a unique name.
 // You will also need to edit the style.php file if you change the directory name.
 
-function utsuktadefault_init(&$App) {
+function bootswatched_init(&$App) {
 
     App::$theme_info['extends'] = 'redbasic';
 
