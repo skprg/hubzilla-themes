@@ -12,12 +12,31 @@
 
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto pe-3">                           
 
+                            {{if $userinfo}}
+                            {{if $sel.name}}
+                            <li class="nav-item">
+        			         	<a id="nav-app-link" href="{{$url}}" class="nav-link text-truncate" style="width: 100%">
+                				{{$sel.name}}
+    			        		{{if $sitelocation}}
+	    			            	({{$sitelocation}})
+        		    			{{/if}}
+		        	           	</a>
+                            </li>
+                    	    {{if $settings_url}}
+                            <li class="nav-item">
+        		             	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+		    			        <i class="fa fa-fw fa-cog"></i>
+        			        	</a>
+                            </li>
+                	    	{{/if}}
+                    		{{/if}}
+                            {{/if}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -51,26 +70,7 @@
                         		{{/if}} 
                                 </div>
                             </li>                                                    
-                            {{if $userinfo}}
-                            {{if $sel.name}}
-                            <li class="nav-item">
-        			         	<a id="nav-app-link" href="{{$url}}" class="nav-link text-truncate" style="width: 100%">
-                				{{$sel.name}}
-    			        		{{if $sitelocation}}
-	    			            	({{$sitelocation}})
-        		    			{{/if}}
-		        	           	</a>
-                            </li>
-                    	    {{if $settings_url}}
-                            <li class="nav-item">
-        		             	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
-		    			        <i class="fa fa-fw fa-cog"></i>
-        			        	</a>
-                            </li>
-                	    	{{/if}}
-                    		{{/if}}
-                            {{/if}}
- 
+
                         </ul>
 
                         <div class="dropdown mb-0 me-2 bd-mode-toggle">
