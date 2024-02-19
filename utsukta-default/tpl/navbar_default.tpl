@@ -24,25 +24,6 @@
                             </li>
                         		{{/foreach}}
                         	{{/if}}
-                            {{if $userinfo}}
-                            {{if $sel.name}}
-                            <li class="nav-item">
-        			         	<a id="nav-app-link" href="{{$url}}" class="nav-link text-truncate" style="width: 100%">
-                				{{$sel.name}}
-    			        		{{if $sitelocation}}
-	    			            	({{$sitelocation}})
-        		    			{{/if}}
-		        	           	</a>
-                            </li>
-                    	    {{if $settings_url}}
-                            <li class="nav-item">
-        		             	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
-		    			        <i class="fa fa-fw fa-cog"></i>
-        			        	</a>
-                            </li>
-                	    	{{/if}}
-                    		{{/if}}
-                            {{/if}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -116,8 +97,26 @@
             	        	</div>
                     		<div class="nav d-lg-flex w-100"></div>
                      		{{/if}}
-                            
+
                             {{if $userinfo}}
+                            {{if $sel.name}}
+                            <li class="nav-item">
+        			         	<a id="nav-app-link" href="{{$url}}" class="nav-link text-truncate" style="width: 100%">
+                				{{$sel.name}}
+    			        		{{if $sitelocation}}
+	    			            	({{$sitelocation}})
+        		    			{{/if}}
+		        	           	</a>
+                            </li>
+                    	    {{if $settings_url}}
+                            <li class="nav-item">
+        		             	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+		    			        <i class="fa fa-fw fa-cog"></i>
+        			        	</a>
+                            </li>
+                	    	{{/if}}
+                    		{{/if}}
+
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
                               <ul class="dropdown-menu dropdown-menu-end">
