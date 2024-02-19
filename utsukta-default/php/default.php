@@ -29,7 +29,7 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="" id="sidebar-wrapper">
-            <div class="offcanvas-body pt-2">
+            <div class="offcanvas-body p-2">
                 <?php if(x($page,'aside')) echo $page['aside']; ?>
             </div>
         </div>
