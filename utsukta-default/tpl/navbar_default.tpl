@@ -19,7 +19,6 @@
                         <ul class="navbar-nav me-auto pe-3">                           
                             {{if $navbar_apps.0}}
                             <li class="nav-item">
-                        	 	<a class="dropdown-item disabled" aria-disabled="true">{{$pinned_apps}}</a>
                         		{{foreach $navbar_apps as $navbar_app}}
                                 	{{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
                         		{{/foreach}}
