@@ -18,11 +18,11 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto pe-3">                           
                             {{if $navbar_apps.0}}
-                            <li class="nav-item">
                         		{{foreach $navbar_apps as $navbar_app}}
+                            <li class="nav-item">
                                 	{{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
-                        		{{/foreach}}
                             </li>
+                        		{{/foreach}}
                         	{{/if}}
                             {{if $userinfo}}
                             {{if $sel.name}}
