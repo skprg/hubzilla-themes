@@ -1,4 +1,3 @@
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top p-1" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 
@@ -50,7 +49,9 @@
                         		{{/if}} 
                                 </div>
                             </li>                                                    
-
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
+                            </form>
                         </ul>
 
                         <div class="dropdown mb-0 me-2 bd-mode-toggle">
@@ -78,10 +79,6 @@
                                 </li>
                             </ul>
                         </div>
-
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
-                        </form>
 
                         <ul class="navbar-nav">                           
                             {{if $nav.login && !$userinfo}}
