@@ -16,7 +16,7 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto pe-3">                           
+                        <ul class="navbar-nav me-auto">                           
                             {{if $navbar_apps.0}}
                         		{{foreach $navbar_apps as $navbar_app}}
                             <li class="nav-item">
@@ -83,7 +83,7 @@
                             <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
                         </form>
 
-                        <ul class="navbar-nav pe-3">                           
+                        <ul class="navbar-nav">                           
                             {{if $nav.login && !$userinfo}}
                     		<div class="hstack gap-1 pt-1 pb-1">
         			        {{if $nav.loginmenu.1.4}}
