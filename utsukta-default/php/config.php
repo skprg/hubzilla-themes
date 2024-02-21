@@ -1,3 +1,5 @@
+<?php
+
 namespace Zotlabs\Theme;
 
 class RedbasicConfig {
