@@ -13,19 +13,19 @@ if(! App::$install) {
 	$uid = get_theme_uid();
 
 	if($uid) {
-		load_pconfig($uid,'utsuktadefault');
+		load_pconfig($uid,'utsukta_default');
 	}
 
 	// Load the owners pconfig
-	$schema = get_pconfig($uid,'utsuktadefault','schema');
+	$schema = get_pconfig($uid,'utsukta_default','schema');
 
 }
 
 
 // Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this.
 
-if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsuktadefault')
-	set_pconfig(local_channel(), 'utsuktadefault', 'schema', '---');
+if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsukta_default')
+	set_pconfig(local_channel(), 'utsukta_default', 'schema', '---');
 
 // Allow layouts to over-ride the schema
 if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema'])) {
@@ -64,5 +64,5 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
 
 // Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this.
 
-if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsuktadefault')
-	set_pconfig(local_channel(), 'utsuktadefault', 'schema', '---');
+if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsukta_default')
+	set_pconfig(local_channel(), 'utsukta_default', 'schema', '---');
