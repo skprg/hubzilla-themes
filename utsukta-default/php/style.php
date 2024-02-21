@@ -7,6 +7,25 @@
 // ! If you change the name of the directory containing the theme, be sure to change this line to match.
 echo @file_get_contents('view/theme/utsukta-default/css/style.css');
 
+if(! App::$install) {
+
+	// Get the UID of the channel owner
+	$uid = get_theme_uid();
+
+	if($uid) {
+		load_pconfig($uid,'utsuktadefault');
+	}
+
+	// Load the owners pconfig
+	$schema = get_pconfig($uid,'utsuktadefault','schema');
+
+}
+
+
+// Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this.
+
+if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsuktadefault')
+	set_pconfig(local_channel(), 'utsuktadefault', 'schema', '---');
 
 // Allow layouts to over-ride the schema
 if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema'])) {
@@ -45,5 +64,5 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
 
 // Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this.
 
-if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'redbasic')
-	set_pconfig(local_channel(), 'redbasic', 'schema', '---');
+if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsuktadefault')
+	set_pconfig(local_channel(), 'utsuktadefault', 'schema', '---');
