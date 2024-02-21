@@ -16,9 +16,8 @@
 // If you change the name of the theme to `yournewname` change `redbasicchild_init` to `yournewname_init` so it has a unique name.
 // You will also need to edit the style.php file if you change the directory name.
 
-function utsuktadefault_init(&$App) {
+function utsuktadefault_init(&$a) {
 
     App::$theme_info['extends'] = 'redbasic';
-
 
 }
