@@ -2,7 +2,7 @@
 
 namespace Zotlabs\Theme;
 
-class UtsuktadefaultConfig {
+class RedbasicConfig {
 
 	function get_schemas() {
 		$files = glob('view/theme/utsukta-default/schema/*.php');
