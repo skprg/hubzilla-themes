@@ -5,13 +5,13 @@ namespace Zotlabs\Theme;
 class RedbasicConfig {
 
 	function get_schemas() {
-		$files = glob('view/theme/redbasic/schema/*.php');
+		$files = glob('view/theme/utsukta-default/schema/*.php');
 
 		$scheme_choices = [];
 
 		if($files) {
 
-			if(in_array('view/theme/redbasic/schema/default.php', $files)) {
+			if(in_array('view/theme/utsukta-default/schema/default.php', $files)) {
 				$scheme_choices['---'] = t('Default');
 				$scheme_choices['focus'] = t('Focus (Hubzilla default)');
 			}

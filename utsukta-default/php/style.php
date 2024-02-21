@@ -16,13 +16,13 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
   if (($schema) && ($schema != '---')) {
   
       // Check it exists, because this setting gets distributed to clones
-      if(file_exists('view/theme/redbasic/schema/' . $schema . '.php')) {
-          $schemefile = 'view/theme/redbasic/schema/' . $schema . '.php';
+      if(file_exists('view/theme/utsukta-default/schema/' . $schema . '.php')) {
+          $schemefile = 'view/theme/utsukta-default/schema/' . $schema . '.php';
           require_once ($schemefile);
       }
   
-      if(file_exists('view/theme/redbasic/schema/' . $schema . '.css')) {
-          $schemecss = file_get_contents('view/theme/redbasic/schema/' . $schema . '.css');
+      if(file_exists('view/theme/utsukta-default/schema/' . $schema . '.css')) {
+          $schemecss = file_get_contents('view/theme/utsukta-default/schema/' . $schema . '.css');
       }
   
   }
@@ -31,14 +31,14 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
   // default.php and default.css MUST be symlinks to existing schema files in view/theme/redbasic/schema
   if ((!$schema) || ($schema == '---')) {
   
-      if(file_exists('view/theme/redbasic/schema/default.php')) {
-          $schemefile = 'view/theme/redbasic/schema/default.php';
+      if(file_exists('view/theme/utsukta-default/schema/default.php')) {
+          $schemefile = 'view/theme/utsukta-default/schema/default.php';
           require_once ($schemefile);
       }
   
       $schemecss = '';
-      if(file_exists('view/theme/redbasic/schema/default.css')) {
-          $schemecss = file_get_contents('view/theme/redbasic/schema/default.css');
+      if(file_exists('view/theme/utsukta-default/schema/default.css')) {
+          $schemecss = file_get_contents('view/theme/utsukta-default/schema/default.css');
       }
   
   }
