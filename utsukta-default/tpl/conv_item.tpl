@@ -288,7 +288,7 @@
 		{{/foreach}}
 		{{/if}}
 		{{if $item.comment}}
-		<div id="wall-item-comment-wrapper-{{$item.id}}" class="p-2 wall-item-comment-wrapper{{if $item.children}} wall-item-comment-wrapper-wc{{/if}}" >
+		<div id="wall-item-comment-wrapper-{{$item.id}}" class="pt-1 wall-item-comment-wrapper{{if $item.children}} wall-item-comment-wrapper-wc{{/if}}" >
 			{{$item.comment}}
 		</div>
 		{{/if}}
