@@ -1,0 +1,39 @@
+.comment .wall-item-body {
+	padding-left: 2.8rem;
+}
+
+.wall-item-content-wrapper.comment {
+	border-bottom: 1px solid var(--bs-border-color);
+}
+
+.hide-comments-outer,
+.hide-comments-outer:hover {
+	border: 0;
+}
+
+.widget {
+	border: 1px solid var(--bs-border-color);
+}
+
+#note-text {
+	border: 1px solid transparent;
+}
+
+.vcard-card {
+	border: 1px solid var(--bs-border-color);
+	border-bottom: 0;
+}
+
+.vcard-card .card {
+	border: 1px solid var(--bs-border-color);
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+}
+
+.vcard-card .vcard {
+	border: 1px solid var(--bs-border-color);
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+}
