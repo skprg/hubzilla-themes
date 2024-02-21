@@ -1,3 +1,5 @@
+{{include file="field_select.tpl" field=$schema}}
+
 {{include file="field_checkbox.tpl" field=$dark_mode}}
 {{include file="field_checkbox.tpl" field=$narrow_navbar}}
 {{include file="field_input.tpl" field=$converse_width}}

@@ -4,9 +4,6 @@
 // This allows your child theme to only specify changes. Anything undefined is pulled from Redbasic.
 //
 
-// ! If you change the name of the directory containing the theme, be sure to change this line to match.
-echo @file_get_contents('view/theme/utsukta-default/css/style.css');
-
 if(! App::$install) {
 
 	// Get the UID of the channel owner
@@ -62,7 +59,5 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
   
   }
 
-// Set the schema to the default schema in derived themes. See the documentation for creating derived themes how to override this.
-
-if(local_channel() && App::$channel && App::$channel['channel_theme'] != 'utsukta_default')
-	set_pconfig(local_channel(), 'utsukta_default', 'schema', '---');
+// ! If you change the name of the directory containing the theme, be sure to change this line to match.
+echo @file_get_contents('view/theme/utsukta-default/css/style.css');
