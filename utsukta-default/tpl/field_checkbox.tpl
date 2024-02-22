@@ -9,11 +9,6 @@
         </div>
 		<small class="form-text text-muted">{{$field.3}}</small>
 	</div>
-    <div id="{{$field.0}}_container" class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" name="{{$field.0}}" id="id_{{$field.0}}" {{if $field.2}}checked="checked"{{/if}} {{if $field.5}}{{$field.5}}{{/if}}>
-        <label for="id_{{$field.0}}" class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-		<small class="form-text text-muted">{{$field.3}}</small>
-    </div>    
 {{*
 	COMMENTS for this template:
 	@author hilmar runge, 2020.01
