@@ -38,7 +38,7 @@
 		{{/foreach}}
 	</div>
 	{{else}}
-	<table id="cloud-index">
+	<table id="cloud-index" class="table table-hover">
 		<tr>
 			<th width="1%">{{* multi tool checkbox *}}</th>
 			<th width="1%">{{* icon *}}</th>
