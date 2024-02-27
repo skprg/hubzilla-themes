@@ -11,3 +11,4 @@ use the following in your hubzilla root folder to add these themes:
 
 # Issues:
 - themes with names without hyphen do not work, therefor utsukta-default(clone of bootswatched) is used.
+- TPL editor interface needs to be edited to display bottom panels. Can be implemented using offcanvas tab.
