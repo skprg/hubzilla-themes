@@ -47,12 +47,20 @@
                                 </div>
                             </li>                                                    
                         </ul>    
+                        {{if $settings_url}}
+                          <li class="nav-item">
+              		         	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+		    	          		      <i class="fa fa-fw fa-cog"></i>
+        			             	</a>
+                          </li>
+                    	  {{/if}}
+
                         <form class="d-flex" role="search">
                              <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
                         </form>
                     </div>
                 </div>
-                        <ul class="navbar-nav">                           
+                        <ul class="nav">                           
                           {{if $nav.login && !$userinfo}}
                             <div class="hstack gap-1 pt-1 pb-1">
                             {{if $nav.loginmenu.1.4}}
@@ -67,7 +75,7 @@
                             <div class="nav d-lg-flex w-100"></div>
                           {{/if}}
 
-                            <div class="dropdown mb-0 me-2 bd-mode-toggle">
+                            <div class="dropdown mb-0 me-2">
                               <button class="btn btn-primary btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                               <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
                               <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
@@ -104,13 +112,6 @@
                               </a>
                             </li>
 
-                      	    {{if $settings_url}}
-                              <li class="nav-item">
-              		             	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
-		    	          		        <i class="fa fa-fw fa-cog"></i>
-        			                	</a>
-                              </li>
-                    	    	{{/if}}
                         		{{/if}}
 
                             <li class="nav-item dropdown">
