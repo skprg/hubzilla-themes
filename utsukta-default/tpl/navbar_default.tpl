@@ -51,10 +51,7 @@
                         <form class="d-flex" role="search">
                              <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
                         </form>
-                    </div>
-                </div>
-                        <ul class="nav">                           
-                            <div class="dropdown mb-0 me-2">
+                        <div class="dropdown mb-0 me-2">
                               <button class="btn btn-link btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                               <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
                               <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
@@ -92,6 +89,10 @@
                             {{/if}}
                             </div>
                           {{/if}}
+
+                    </div>
+                </div>
+                        <ul class="nav">                           
 
                             {{if $userinfo}}
                             {{if $sel.name}}
