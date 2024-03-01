@@ -1,7 +1,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-1" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 
-                <button class="btn btn-outline btn-primary" id="sidebarToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                <button class="btn btn-outline-dark me-2" id="sidebarToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-exchange" aria-hidden="true"></i></button>
                 
                 <div class="navbar-brand">{{$banner}}</div>
                 
@@ -62,7 +62,7 @@
                 </div>
                         <ul class="nav">                           
                             <div class="dropdown mb-0 me-2">
-                              <button class="btn btn-primary btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                              <button class="btn btn-link btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                               <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
                               <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
                               </button>
