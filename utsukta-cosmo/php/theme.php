@@ -1,8 +1,8 @@
 <?php
 
 /**
- *   * Name: Utsukta Default
- *   * Description: Utsukta hub default theme
+ *   * Name: Bootswatch Cosmo
+ *   * Description: cosmo variant of bootstrap
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
@@ -16,7 +16,7 @@
 // If you change the name of the theme to `yournewname` change `redbasicchild_init` to `yournewname_init` so it has a unique name.
 // You will also need to edit the style.php file if you change the directory name.
 
-function utsuktadefault_init(&$a) {
+function utsuktacosmo_init(&$a) {
 
     App::$theme_info['extends'] = 'redbasic';
 
