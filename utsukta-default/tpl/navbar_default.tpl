@@ -105,7 +105,7 @@
                             </li>
                             {{if $settings_url}}
                               <li class="nav-item">
-                  		         	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+                  		         	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
 		    	            		      <i class="fa fa-fw fa-cog"></i>
         			                 	</a>
                               </li>
