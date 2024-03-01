@@ -1,4 +1,4 @@
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top p-1" aria-label="Offcanvas navbar large">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-1" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 
                 <button class="btn btn-outline btn-primary" id="sidebarToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-exchange" aria-hidden="true"></i></button>
@@ -61,20 +61,6 @@
                     </div>
                 </div>
                         <ul class="nav">                           
-                          {{if $nav.login && !$userinfo}}
-                            <div class="hstack gap-1 pt-1 pb-1">
-                            {{if $nav.loginmenu.1.4}}
-                              <a class="btn btn-info btn-sm" href="#" title="{{$nav.loginmenu.1.3}}" data-bs-toggle="modal" data-bs-target="#nav-login">{{$nav.loginmenu.1.1}}</a>
-                            {{else}}
-                              <a class="btn btn-primary btn-sm" href="login" title="{{$nav.loginmenu.1.3}}">{{$nav.loginmenu.1.1}}</a>
-                            {{/if}}
-                            {{if $nav.register}}
-                              <a class="btn btn-warning btn-sm" href="{{$nav.register.0}}" title="{{$nav.register.3}}">{{$nav.register.1}}</a>
-                            {{/if}}
-                            </div>
-                            <div class="nav d-lg-flex w-100"></div>
-                          {{/if}}
-
                             <div class="dropdown mb-0 me-2">
                               <button class="btn btn-primary btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                               <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
@@ -100,6 +86,19 @@
                                   </li>
                               </ul>
                             </div>
+
+                          {{if $nav.login && !$userinfo}}
+                            <div class="hstack gap-1 pt-1 pb-1">
+                            {{if $nav.loginmenu.1.4}}
+                              <a class="btn btn-info btn-sm" href="#" title="{{$nav.loginmenu.1.3}}" data-bs-toggle="modal" data-bs-target="#nav-login">{{$nav.loginmenu.1.1}}</a>
+                            {{else}}
+                              <a class="btn btn-primary btn-sm" href="login" title="{{$nav.loginmenu.1.3}}">{{$nav.loginmenu.1.1}}</a>
+                            {{/if}}
+                            {{if $nav.register}}
+                              <a class="btn btn-warning btn-sm" href="{{$nav.register.0}}" title="{{$nav.register.3}}">{{$nav.register.1}}</a>
+                            {{/if}}
+                            </div>
+                          {{/if}}
 
                             {{if $userinfo}}
                             {{if $sel.name}}
