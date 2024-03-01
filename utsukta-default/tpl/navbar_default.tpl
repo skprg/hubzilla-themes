@@ -180,8 +180,8 @@
                             </li>
                             {{/if}}
                             <li>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
+                              <button class="navbar-toggler btn btn-link border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                               </button>
                             </li>
                         </ul>
