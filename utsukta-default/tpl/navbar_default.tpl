@@ -5,10 +5,7 @@
                 
                 <div class="navbar-brand">{{$banner}}</div>
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
+                
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
@@ -182,6 +179,11 @@
                               </ul>
                             </li>
                             {{/if}}
+                            <li>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                              </button>
+                            </li>
                         </ul>
 
              </div>
