@@ -47,13 +47,6 @@
                                 </div>
                             </li>                                                    
                         </ul>    
-                        {{if $settings_url}}
-                          <li class="nav-item">
-              		         	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
-		    	          		      <i class="fa fa-fw fa-cog"></i>
-        			             	</a>
-                          </li>
-                    	  {{/if}}
 
                         <form class="d-flex" role="search">
                              <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
@@ -110,7 +103,13 @@
                             {{/if}}
                               </a>
                             </li>
-
+                            {{if $settings_url}}
+                              <li class="nav-item">
+                  		         	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+		    	            		      <i class="fa fa-fw fa-cog"></i>
+        			                 	</a>
+                              </li>
+                    	      {{/if}}
                         		{{/if}}
 
                             <li class="nav-item dropdown">
