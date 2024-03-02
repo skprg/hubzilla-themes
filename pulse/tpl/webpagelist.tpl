@@ -16,6 +16,7 @@
 	{{if $pages}}
 	<div id="pagelist-content-wrapper" class="section-content-wrapper-np">
 		<table id="webpage-list-table" class="table table-hover">
+      <thead>
 			<tr>
 				<th width="1%">{{$pagelink_txt}}</th>
 				<th width="95%">{{$title_txt}}</th>
@@ -26,6 +27,8 @@
 				<th width="1%" class="d-none d-md-table-cell">{{$created_txt}}</th>
 				<th width="1%" class="d-none d-md-table-cell">{{$edited_txt}}</th>
 			</tr>
+      </thead>
+      <tbody>
 			{{foreach $pages as $key => $items}}
 			{{foreach $items as $item}}
 			<tr id="webpage-list-item-{{$item.url}}">
@@ -69,6 +72,7 @@
 			</tr>
 			{{/foreach}}
 			{{/foreach}}
+      </tbody>
 		</table>
 	</div>
 	{{/if}}

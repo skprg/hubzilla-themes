@@ -12,6 +12,7 @@
 	{{if $menus }}
 	<div id="menulist-content-wrapper" class="section-content-wrapper-np">
 		<table id="menu-list-table" class="table table-hover">
+      <thead>
 			<tr>
 				<th width="1%"></th>
 				<th width="1%">{{$nametitle}}</th>
@@ -22,6 +23,8 @@
 				<th width="1%" class="d-none d-md-table-cell">{{$created}}</th>
 				<th width="1%" class="d-none d-md-table-cell">{{$edited}}</th>
 			</tr>
+      </thead>
+      <tbody>
 			{{foreach $menus as $m }}
 			<tr id="menu-list-item-{{$m.menu_id}}">
 				<td>{{if $m.bookmark}}<i class="fa fa-bookmark menu-list-tool" title="{{$bmark}}" ></i>{{/if}}</td>
@@ -34,6 +37,7 @@
 				<td class="d-none d-md-table-cell">{{$m.menu_edited}}</td>
 			</tr>
 			{{/foreach}}
+      </tbody>
 		</table>
 	</div>
 	{{/if}}
