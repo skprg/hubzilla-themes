@@ -1,7 +1,7 @@
 <?php
 
 /**
- *   * Name: Bootswatch Cosmo
+ *   * Name: Cosmo
  *   * Description: cosmo variant of bootstrap
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2

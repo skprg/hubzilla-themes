@@ -1,7 +1,7 @@
 <?php
 
 /**
- *   * Name: Bootswatch Journal
+ *   * Name: Journal
  *   * Description: journal variant of bootstrap
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2

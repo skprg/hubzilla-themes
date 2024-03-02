@@ -2,7 +2,7 @@
 
 /**
  *   * Name: Utsukta Default
- *   * Description: Utsukta hub default theme
+ *   * Description: Utsukta hub default theme based on bootstrap
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0

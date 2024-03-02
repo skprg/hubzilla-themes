@@ -1,7 +1,7 @@
 <?php
 
 /**
- *   * Name: Bootswatch Sketchy
+ *   * Name: Sketchy
  *   * Description: sketchy variant of bootstrap
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2
