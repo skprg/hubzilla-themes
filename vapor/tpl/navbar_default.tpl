@@ -52,7 +52,7 @@
                              <input class="form-control me-2" id="nav-search-text" type="search" value="" placeholder="{{$help}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" onblur="closeMenu('nav-search'); openMenu('nav-search-btn');"/>
                         </form>
                         <div class="dropdown mb-0 me-0">
-                              <button class="btn btn-link btn-sm py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                              <button class="btn btn-link btn-sm py-2 dropdown-toggle d-flex align-items-center text-primary-emphasis" id="bd-theme" type="button" aria-expanded="false"  data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                               <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
                               <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
                               </button>
@@ -97,7 +97,7 @@
                             {{if $userinfo}}
 
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
+                              <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
                               <ul class="dropdown-menu dropdown-menu-end">
                                   {{if $is_owner}}
                                   {{foreach $nav.usermenu as $usermenu}}
