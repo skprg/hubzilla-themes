@@ -9,6 +9,6 @@ use the following in your hubzilla root folder to add these themes:
     util/add_theme_repo https://github.com/sk-utsukta/themes.git themes
 
 
-# Todo:
+# Todo
 - [ ] Add notification icon on topnav instead of aside.
 - [ ] Add screenshots.
