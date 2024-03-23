@@ -252,14 +252,14 @@
 						{{/if}}
 						{{foreach $item.responses as $verb=>$response}}
 						{{if $response.count}}
-						<div class="btn-group">
-							<button type="button" class="btn btn-secondary btn-sm wall-item-like dropdown-toggle"{{if $response.modal}} data-bs-toggle="modal" data-bs-target="#{{$verb}}Modal-{{$item.id}}"{{else}} data-bs-toggle="dropdown"{{/if}} id="wall-item-{{$verb}}-{{$item.id}}">{{$response.count}} {{$response.button}}</button>
+						<div class="">
+                            <button type="button" title="{{$response.count}} {{$response.button.label}}" class="btn btn-outline-secondary border-0 btn-sm wall-item-{{$response.button.class}}"{{if $response.modal}} data-bs-toggle="mod    al" data-bs-target="#{{$verb}}Modal-{{$item.id}}"{{else}} data-bs-toggle="dropdown"{{/if}} id="wall-item-{{$verb}}-{{$item.id}}"><i class="fa fa-{{$response.button.icon}}"></i> {{$response.count}}</button>
 							{{if $response.modal}}
 							<div class="modal" id="{{$verb}}Modal-{{$item.id}}">
 								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h3 class="modal-title">{{$response.count}} {{$response.button}}</h3>
+											<h3 class="modal-title">{{$response.count}} {{$response.button.label}}</h3>
 											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
 										</div>
 										<div class="modal-body response-list">
