@@ -229,7 +229,7 @@
                             </div>
                             {{/if}}
                             <div class="wall-item-list-comments btn-group">
-                                <a class="btn btn-outline-secondary btn-sm border-0 wall-item-comments" href="{{$item.viewthread}}" title="{{$item.comment_count_txt.label}}{{if $item.list_unseen_txt}}, {{$item.list_unseen_txt.label}}{{/if}}">
+                                <a class="btn btn-secondary btn-sm border-0 wall-item-comments" href="{{$item.viewthread}}" title="{{$item.comment_count_txt.label}}{{if $item.list_unseen_txt}}, {{$item.list_unseen_txt.label}}{{/if}}">
                                     <i class="fa fa-comment-o"></i> {{$item.comment_count_txt.count}}{{if $item.unseen_comments}}<span class="unseen-wall-indicator-{{$item.id}}">, <i class="fa fa-eye-slash"></i> {{$item.list_unseen_txt.count}}</span>{{/if}}
                                 </a>
                             </div>
