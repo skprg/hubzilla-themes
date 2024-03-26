@@ -243,7 +243,7 @@
                             {{if $item.responses }}
                             {{foreach $item.responses as $verb=>$response}}
                             {{if $response.count}}
-                            <div class="">
+                            <div class="btn-group">
                             <button type="button" class="btn btn-secondary btn-sm border-0 wall-item-{{$response.button.class}}"{{if $response.modal}} data-bs-toggle="modal" data-bs-target="#{{$verb}}Modal-{{$item.id}}"{{else    }} data-bs-toggle="dropdown"{{/if}} id="wall-item-{{$verb}}-{{$item.id}}"><i class="fa fa-{{$response.button.icon}}"></i> {{$response.count}}</button>
                                 {{if $response.modal}}
                                 <div class="modal" id="{{$verb}}Modal-{{$item.id}}">
