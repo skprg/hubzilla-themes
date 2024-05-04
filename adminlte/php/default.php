@@ -28,7 +28,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer text-sm">
     🖖 Live long and prosper.
     <div class="float-right d-none d-sm-inline-block">
     </div>
