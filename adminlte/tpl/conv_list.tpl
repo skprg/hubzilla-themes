@@ -27,7 +27,7 @@
 				{{/if}}
 				{{/if}}
 				<div class="p-2 wall-item-head {{if $item.is_new && !$item.event && !$item.is_comment}} wall-item-head-new{{/if}}" >
-					<div class="text-end float-end">
+					<div class="text-end float-right">
 						<div class="wall-item-ago opacity-75" id="wall-item-ago-{{$item.id}}">
 							{{if $item.editedtime}}
 							<i class="fa fa-pencil"></i>
@@ -52,7 +52,7 @@
 						<div class="wall-item-pinned" title="{{$item.pinned}}" id="wall-item-pinned-{{$item.id}}"><i class="fa fa-thumb-tack"></i></div>
 						{{/if}}
 					</div>
-					<div class="float-start wall-item-info pe-2" id="wall-item-info-{{$item.id}}" >
+					<div class="float-left wall-item-info pe-2" id="wall-item-info-{{$item.id}}" >
 						<div class="wall-item-photo-wrapper{{if $item.owner_url}} wwfrom{{/if}} h-card p-author" id="wall-item-photo-wrapper-{{$item.id}}">
 							{{if $item.contact_id}}
 							<div class="spinner-wrapper contact-edit-rotator contact-edit-rotator-{{$item.contact_id}}"><div class="spinner s"></div></div>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="wall-item-author">
 						{{if $item.lock}}
-						<div class="float-start dropdown wall-item-lock">
+						<div class="float-left dropdown wall-item-lock">
 							<i class="fa {{if $item.locktype == 2}}fa-envelope-o{{else if $item.locktype == 1}}fa-lock{{else}}fa-unlock{{/if}} lockview{{if $item.privacy_warning}} text-danger{{/if}}" data-bs-toggle="dropdown" title="{{$item.lock}}" onclick="lockview('item',{{$item.id}});" ></i>&nbsp;
 							<div id="panel-{{$item.id}}" class="dropdown-menu"></div>
 						</div>
@@ -103,7 +103,7 @@
 				</div>
 				{{/if}}
 				<div class="p-2 clearfix wall-item-tools">
-					<div class="float-end wall-item-tools-right">
+					<div class="float-right wall-item-tools-right">
 						{{if $item.toplevel && $item.emojis && $item.reactions}}
 						<div class="btn-group">
 							<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown" id="wall-item-react-{{$item.id}}">
