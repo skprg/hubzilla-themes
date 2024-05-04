@@ -16,7 +16,7 @@
 
   <?php if(x($page,'nav')) echo $page['nav']; ?>
    <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper px-4 py-2">
     <?php if(x($page,'content')) echo $page['content']; ?>
   </div>
   <!-- /.content-wrapper -->
