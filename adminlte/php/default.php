@@ -29,8 +29,8 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
+    🖖 Live long and prosper.
     <div class="float-right d-none d-sm-inline-block">
-      🖖 Live long and prosper.
     </div>
   </footer>
 </div>
