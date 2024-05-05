@@ -108,6 +108,17 @@
       </li>
       {{/if}}
     </ul>
+                          {{if $nav.login && !$userinfo}}
+                            <div class="hstack gap-1 pt-1 pb-1">
+                            {{if $nav.loginmenu.1.4}}
+                              <a class="btn btn-info btn-sm" href="#" title="{{$nav.loginmenu.1.3}}" data-bs-toggle="modal" data-bs-target="#nav-login">{{$nav.loginmenu.1.1}}</a>
+                            {{else}}
+                              <a class="btn btn-primary btn-sm" href="login" title="{{$nav.loginmenu.1.3}}">{{$nav.loginmenu.1.1}}</a>
+                            {{/if}}
+                            {{if $nav.register}}
+                              <a class="btn btn-warning btn-sm" href="{{$nav.register.0}}" title="{{$nav.register.3}}">{{$nav.register.1}}</a>
+                            {{/if}}
+
   </nav>
   <!-- /.navbar -->
 
