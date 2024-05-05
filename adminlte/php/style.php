@@ -60,4 +60,4 @@ if (isset($_REQUEST['schema']) && preg_match('/^[\w_-]+$/i', $_REQUEST['schema']
   }
 
 // ! If you change the name of the directory containing the theme, be sure to change this line to match.
-echo @file_get_contents('view/theme/default/css/style.css');
+echo @file_get_contents('view/theme/adminlte/css/style.css');

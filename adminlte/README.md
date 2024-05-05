@@ -5,10 +5,10 @@ Based on the free template provided by [colorlib](https://adminlte.io/).
 - [x] Implement adminlte base layout.
 - [ ] Implement sidebar
   - [ ] Context Menu
-  - [ ] Apps Section
+  - [x] Apps Section
   - [ ] Settings
   - [ ] Admin
-  - [ ] Siteinfo
+  - [x] Siteinfo
 - [ ] Stream (Network) Page
 - [ ] Webpages
 - [ ] Headquarters
