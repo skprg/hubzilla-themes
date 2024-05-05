@@ -19,31 +19,33 @@
                                 	{{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
                             </li>
                         		{{/foreach}}
-                        	{{/if}}
+                        	  {{/if}}
+                            
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                
                                 {{if $channel_apps.0}}
                                     <a class="dropdown-item disabled" aria-disabled="true">{{$channelapps}}</a>
                         		    {{foreach $channel_apps as $channel_app}}
                         		        {{$channel_app}}
                            			{{/foreach}}
-                    		    {{/if}}
+                    		        {{/if}}
 
                                 {{if $is_owner}}
                                     <a class="dropdown-item disabled" aria-disabled="true">{{$featured_apps}}</a>
                                     <ul class="nav nav-treeview">
-                    	        		{{foreach $nav_apps as $nav_app}}
-                                            {{$nav_app}}
-                                        {{/foreach}}
+                    	        	    	{{foreach $nav_apps as $nav_app}}
+                                        {{$nav_app}}
+                                      {{/foreach}}
                                     </ul>
-                        			<a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
-                        		{{else}}
-                        	    	<a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
-                        			{{foreach $nav_apps as $nav_app}}
-                        		        {{$nav_app}}
-                        			{{/foreach}}
-                        		{{/if}} 
+                              			<a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
+                            		{{else}}
+                            	    	<a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
+                              			{{foreach $nav_apps as $nav_app}}
+                          		        {{$nav_app}}
+                              			{{/foreach}}
+                        		    {{/if}} 
                                 </div>
                             </li>                                                    
                         </ul>    

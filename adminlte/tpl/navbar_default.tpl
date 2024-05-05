@@ -177,7 +177,7 @@
               </li>
             </ul>
           </li>      
-          {{$else}}
+          {{else}}
           <!-- Apps for visitor -->
           <li class="nav-item">
             <a href="#" class="nav-link">

@@ -12,4 +12,5 @@ Based on the free template provided by [colorlib](https://adminlte.io/).
 - [ ] Stream (Network) Page
 - [ ] Webpages
 - [ ] Headquarters
+- [ ] Channels
 
