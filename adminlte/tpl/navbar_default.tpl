@@ -122,11 +122,25 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
+      {{if $userinfo}}
       <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fa fa-expand-arrows-alt"></i>
-        </a>
+        <div class="btn-group">
+        <button type="button" class="btn btn-default btn-flat">
+          <img src="{{$userinfo.icon}}" class="img-circle elevation-2" alt="User Image">       
+        </button>
+        <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon" data-toggle="dropdown">
+        <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu" role="menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        </div>        
       </li>
+      {{/if}}
     </ul>
   </nav>
   <!-- /.navbar -->
