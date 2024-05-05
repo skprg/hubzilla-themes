@@ -155,6 +155,7 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">{{$userinfo.name}}</a>
+          <a href="#" class="d-block">{{$userinfo.name}}</a>
         </div>
       </div>
       {{/if}}
