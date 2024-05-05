@@ -14,4 +14,5 @@ Based on the free template provided by [colorlib](https://adminlte.io/).
 - [ ] Webpages
 - [ ] Headquarters
 - [ ] Channels
+- [ ] Profile
 
