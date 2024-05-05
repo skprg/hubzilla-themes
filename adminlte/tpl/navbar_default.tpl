@@ -185,6 +185,7 @@
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               {{foreach $nav_apps as $nav_app}}
+              asd
                 {{$nav_app}}
               {{/foreach}}
             </ul>
