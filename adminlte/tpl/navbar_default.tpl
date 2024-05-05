@@ -149,13 +149,12 @@
           
       {{if $userinfo}}
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-1 pb-3 mb-1 d-flex">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="{{$userinfo.icon}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">{{$userinfo.name}}</a>
-          <a href="#" class="d-block text-sm">{{$profile.reddress}}</a>
         </div>
       </div>
       {{/if}}
