@@ -18,7 +18,7 @@
    <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper px-2 py-2">
     <div class="row">
-      <div class="col-lg-9 col-sm-12"    
+      <div class="col-lg-9 col-sm-12">    
       <?php if(x($page,'content')) echo $page['content']; ?>
       </div>
       <div class="col-lg-3 col-sm-none"> 
