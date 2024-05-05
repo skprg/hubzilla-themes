@@ -109,7 +109,7 @@
       {{/if}}
     </ul>
     {{if $nav.login && !$userinfo}}
-      <div class="hstack gap-1 pt-1 pb-1">
+      <div class="hstack gap-1 pt-1 pb-1 pr-2">
       {{if $nav.loginmenu.1.4}}
         <a class="btn btn-info btn-sm" href="#" title="{{$nav.loginmenu.1.3}}" data-bs-toggle="modal" data-bs-target="#nav-login">{{$nav.loginmenu.1.1}}</a>
       {{else}}
