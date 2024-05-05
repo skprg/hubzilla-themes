@@ -155,7 +155,9 @@
           <!-- Pinned apps for user -->
           {{if $navbar_apps.0}}
           {{foreach $navbar_apps as $navbar_app}}
+          <li class="nav-item">
                 {{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
+          </li>
           {{/foreach}}
           {{/if}}
 
