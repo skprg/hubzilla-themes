@@ -21,7 +21,7 @@
       <div class="col-lg-9 col-sm-12"    
       <?php if(x($page,'content')) echo $page['content']; ?>
       </div>
-      <div class="col-lg-3 col-sm-none"    
+      <div class="col-lg-3 col-sm-none"> 
       <?php if(x($page,'aside')) echo $page['aside']; ?>
       </div>
     </div>
