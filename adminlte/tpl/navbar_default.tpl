@@ -39,7 +39,7 @@
 
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
+        <a class="nav-link" data-bs-toggle="dropdown" href="#">
           <i class="fa fa-comments"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
@@ -132,19 +132,6 @@
           <i class="fas fa-th-large"></i>
         </a>
       </li>
-<div class="btn-group">
-<button type="button" class="btn btn-default">Action</button>
-<button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu" role="menu">
-<a class="dropdown-item" href="#">Action</a>
-<a class="dropdown-item" href="#">Another action</a>
-<a class="dropdown-item" href="#">Something else here</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Separated link</a>
-</div>
-</div>
     </ul>
   </nav>
   <!-- /.navbar -->
