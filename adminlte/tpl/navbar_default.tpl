@@ -140,7 +140,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
            <a href="/siteinfo" class="nav-link">
-            <i class="nav-icon far fa-image"></i>
+            <i class="nav-icon fa fa-info-circle"></i>
             <p>About</p>
            </a>
           </li> 
