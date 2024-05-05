@@ -39,7 +39,7 @@
 
     </ul>
       {{if $userinfo}}
-        <div class="btn-group">
+        <div class="btn-group pr-4">
         <button type="button" class="btn btn-default btn-sm dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
           {{$userinfo.name}}       
         </button>
