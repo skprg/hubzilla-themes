@@ -145,6 +145,21 @@
           </li>
           {{/foreach}}
           {{/if}}
+
+
+          {{if $channel_apps.0}}
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <p>Apps<i class="fa fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              {{foreach $channel_apps as $channel_app}}
+                {{$channel_app}}
+              {{/foreach}}
+            </ul>
+          </li>          
+          {{/if}}
+
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
