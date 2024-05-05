@@ -46,7 +46,7 @@
         <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
         <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="dropdown-menu dropdown-menu-end" role="menu">
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>
