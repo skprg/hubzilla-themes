@@ -31,6 +31,15 @@
         </div>
       </li>
       {{if $userinfo}}
+      {{if $sel.name}}
+      {{if $settings_url}}
+      <li class="nav-item">
+        <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
+        <i class="fa fa-fw fa-cog"></i>
+        </a>
+      </li>
+      {{/if}}
+      {{/if}}
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-profile mh-32px rounded-circle pr-2" src="{{$userinfo.icon}}">{{$userinfo.name}}</a>
@@ -97,15 +106,6 @@
 
         </ul>
       </li>
-      {{if $sel.name}}
-      {{if $settings_url}}
-      <li class="nav-item">
-        <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
-        <i class="fa fa-fw fa-cog"></i>
-        </a>
-      </li>
-      {{/if}}
-      {{/if}}
       {{/if}}
     </ul>
   </nav>
