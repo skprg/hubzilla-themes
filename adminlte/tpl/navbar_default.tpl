@@ -40,8 +40,8 @@
     </ul>
       {{if $userinfo}}
         <div class="btn-group">
-        <button type="button" class="btn btn-default btn-flat">
-          <img src="{{$userinfo.icon}}" class="img-circle elevation-2" alt="User Image">       
+        <button type="button" class="btn btn-default btn-flat btn-xs">
+          {{$userinfo.name}}       
         </button>
         <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
         <span class="sr-only">Toggle Dropdown</span>
