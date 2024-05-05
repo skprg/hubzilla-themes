@@ -30,7 +30,83 @@
           </form>
         </div>
       </li>
+      {{if $userinfo}}
 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
+        <ul class="dropdown-menu dropdown-menu-end">
+            {{if $is_owner}}
+            {{foreach $nav.usermenu as $usermenu}}
+            <li><a href="{{$usermenu.0}}" class="dropdown-item">{{$usermenu.1}}</a></li>
+            {{/foreach}}
+
+            {{if $nav.group}}
+            <a href="{{$nav.group.0}}" class="dropdown-item">{{$nav.group.1}}</a>
+            {{/if}}
+
+            {{if $nav.manage}}
+            <li> <a href="{{$nav.manage.0}}" class="dropdown-item">
+            {{$nav.manage.1}}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $nav.channels}}
+            {{foreach $nav.channels as $chan}}
+            <li><a href="manage/{{$chan.channel_id}}" class="dropdown-item">
+              <i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}
+            </a></li>
+            {{/foreach}}
+            <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $nav.profiles}}
+            <li><a href="{{$nav.profiles.0}}" class="dropdown-item">
+            {{$nav.profiles.1}}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $nav.settings}}
+            <li><a href="{{$nav.settings.0}}" class="dropdown-item">
+            {{$nav.settings.1}}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $nav.admin}}
+            <li><a href="{{$nav.admin.0}}" class="dropdown-item">
+            {{$nav.admin.1}}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $nav.logout}}
+            <li><a href="{{$nav.logout.0}}" class="dropdown-item">
+            {{$nav.logout.1}}
+            </a></li>
+            {{/if}}
+
+            <li>
+            {{/if}}
+            {{if ! $is_owner}}
+            <li><a class="dropdown-item" href="{{$nav.rusermenu.0}}" role="menuitem">{{$nav.rusermenu.1}}</a></li>
+            <li><a class="dropdown-item" href="{{$nav.rusermenu.2}}" role="menuitem">{{$nav.rusermenu.3}}</a></li>
+            {{/if}}
+            </li>
+
+        </ul>
+      </li>
+      {{if $sel.name}}
+      {{if $settings_url}}
+      <li class="nav-item">
+        <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
+        <i class="fa fa-fw fa-cog"></i>
+        </a>
+      </li>
+      {{/if}}
+      {{/if}}
+      {{/if}}
     </ul>
       {{if $userinfo}}
         <div class="btn-group pr-2">
