@@ -138,6 +138,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+          
+          <!-- Pinned apps for user -->
           {{if $navbar_apps.0}}
           {{foreach $navbar_apps as $navbar_app}}
           <li class="nav-item">
@@ -146,11 +148,11 @@
           {{/foreach}}
           {{/if}}
 
-
+          <!-- Other apps for user -->
           {{if $channel_apps.0}}
           <li class="nav-item">
             <a href="#" class="nav-link">
-            <p>Apps<i class="fa fa-angle-left right"></i></p>
+            <p>{{$channelapps}}<i class="fa fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               {{foreach $channel_apps as $channel_app}}
@@ -160,10 +162,11 @@
           </li>          
           {{/if}}
 
+          <!-- Apps for owner -->
           {{if $is_owner}}
           <li class="nav-item">
             <a href="#" class="nav-link">
-            <p>Apps<i class="fa fa-angle-left right"></i></p>
+            <p>{{$featured_apps}}<i class="fa fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               {{foreach $nav_apps as $nav_app}}
@@ -175,6 +178,7 @@
             </ul>
           </li>      
           {{$else}}
+          <!-- Apps for visitor -->
           <li class="nav-item">
             <a href="#" class="nav-link">
             <p>{{$sysapps}}<i class="fa fa-angle-left right"></i></p>
