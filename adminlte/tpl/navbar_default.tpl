@@ -34,7 +34,7 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-profile mh-32px rounded-circle pr-2" src="{{$userinfo.icon}}">{{$userinfo.name}}</a>
-        <ul class="dropdown-menu dropdown-menu-end">
+        <ul class="dropdown-menu dropdown-menu-right">
             {{if $is_owner}}
             {{foreach $nav.usermenu as $usermenu}}
             <li><a href="{{$usermenu.0}}" class="dropdown-item">{{$usermenu.1}}</a></li>
