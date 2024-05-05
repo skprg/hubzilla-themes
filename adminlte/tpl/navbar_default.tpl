@@ -156,7 +156,9 @@
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               {{foreach $channel_apps as $channel_app}}
+              <li class="nav-item">
                 {{$channel_app}}
+              </li>
               {{/foreach}}
             </ul>
           </li>          
@@ -185,7 +187,6 @@
             </a>
             <ul class="nav nav-treeview" style="display: none;">
               {{foreach $nav_apps as $nav_app}}
-              asd
                 {{$nav_app}}
               {{/foreach}}
             </ul>
