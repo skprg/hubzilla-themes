@@ -43,7 +43,7 @@
         <button type="button" class="btn btn-default btn-flat btn-xs">
           {{$userinfo.name}}       
         </button>
-        <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-flat btn-xs dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
         <span class="sr-only">Toggle Dropdown</span>
         </button>
         <div class="dropdown-menu dropdown-menu-right" role="menu">
