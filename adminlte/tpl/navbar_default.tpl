@@ -33,7 +33,7 @@
       {{if $userinfo}}
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
+        <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-profile mh-32px rounded-circle pr-2" src="{{$userinfo.icon}}">{{$userinfo.name}}</a>
         <ul class="dropdown-menu dropdown-menu-end">
             {{if $is_owner}}
             {{foreach $nav.usermenu as $usermenu}}
@@ -108,20 +108,6 @@
       {{/if}}
       {{/if}}
     </ul>
-      {{if $userinfo}}
-        <div class="btn-group pr-2">
-        <button type="button" class="btn btn-default btn-sm dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
-          {{$userinfo.name}}       
-        </button>
-        <div class="dropdown-menu dropdown-menu-right" role="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-        </div>        
-      {{/if}}
   </nav>
   <!-- /.navbar -->
 
