@@ -52,7 +52,7 @@
 						<div class="wall-item-pinned" title="{{$item.pinned}}" id="wall-item-pinned-{{$item.id}}"><i class="fa fa-thumb-tack"></i></div>
 						{{/if}}
 					</div>
-					<div class="float-left wall-item-info pe-2" id="wall-item-info-{{$item.id}}" >
+					<div class="float-left wall-item-info pr-2" id="wall-item-info-{{$item.id}}" >
 						<div class="wall-item-photo-wrapper{{if $item.owner_url}} wwfrom{{/if}} h-card p-author" id="wall-item-photo-wrapper-{{$item.id}}">
 							{{if $item.contact_id}}
 							<div class="spinner-wrapper contact-edit-rotator contact-edit-rotator-{{$item.contact_id}}"><div class="spinner s"></div></div>
