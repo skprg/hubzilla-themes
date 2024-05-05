@@ -6,7 +6,7 @@ A bootstrap based theme making use of [Bootswatch](https://bootswatch.com/). A n
 # Install
 use the following in your hubzilla root folder to add these themes:
 
-    util/add_theme_repo https://github.com/sk-2304/themes.git themes
+    util/add_theme_repo https://github.com/saiwal/hubzilla-themes.git themes
 
 
 # Todo
