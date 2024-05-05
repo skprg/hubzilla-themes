@@ -1,3 +1,6 @@
+### AdminLTE 
+Based on the free template provided by [colorlib](https://adminlte.io/).
+
 ### Roadmap
 - [x] Implement adminlte base layout.
 - [ ] Implement sidebar
