@@ -43,10 +43,10 @@
         <button type="button" class="btn btn-default btn-flat">
           <img src="{{$userinfo.icon}}" class="img-circle elevation-2" alt="User Image">       
         </button>
-        <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon dropdown-end" data-bs-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-flat dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
         <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="dropdown-menu" role="menu">
+        <div class="dropdown-menu dropdown-menu-end" role="menu">
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>
