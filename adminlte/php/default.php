@@ -6,7 +6,7 @@
   <title><?php if(x($page,'title')) echo $page['title'] ?></title>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-navbar-fixed sidebar-fixed">
+<body class="hold-transition dark-mode sidebar-mini layout-navbar-fixed layout-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
