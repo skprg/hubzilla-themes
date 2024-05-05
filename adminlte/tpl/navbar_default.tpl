@@ -165,6 +165,7 @@
           {{if $channel_apps.0}}
           <li class="nav-item">
             <a href="#" class="nav-link">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
             <p>{{$channelapps}}<i class="fa fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview" style="display: none;">
@@ -179,6 +180,7 @@
           {{if $is_owner}}
           <li class="nav-item">
             <a href="#" class="nav-link">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
             <p>{{$featured_apps}}<i class="fa fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview" style="display: none;">
@@ -194,6 +196,7 @@
           <!-- Apps for visitor -->
           <li class="nav-item">
             <a href="#" class="nav-link">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
             <p>{{$sysapps}}<i class="fa fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview" style="display: none;">
