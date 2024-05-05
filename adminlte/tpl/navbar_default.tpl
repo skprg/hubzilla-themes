@@ -160,33 +160,32 @@
           </li>          
           {{/if}}
 
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {{if $channel_apps.0}}
-                  <a class="dropdown-item disabled" aria-disabled="true">{{$channelapps}}</a>
-              {{foreach $channel_apps as $channel_app}}
-                  {{$channel_app}}
+          {{if $is_owner}}
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <p>Apps<i class="fa fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              {{foreach $nav_apps as $nav_app}}
+                {{$nav_app}}
+              {{/foreach}}  
+              <li class="nav-item">
+                <a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
+              </li>
+            </ul>
+          </li>      
+          {{$else}}
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <p>{{$sysapps}}<i class="fa fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              {{foreach $nav_apps as $nav_app}}
+                {{$nav_app}}
               {{/foreach}}
-              {{/if}}
-
-              {{if $is_owner}}
-                  <a class="dropdown-item disabled" aria-disabled="true">{{$featured_apps}}</a>
-                  <ul class="nav nav-treeview">
-                  {{foreach $nav_apps as $nav_app}}
-                          {{$nav_app}}
-                  {{/foreach}}
-                  </ul>
-                  <a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
-              {{else}}
-                  <a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
-                  {{foreach $nav_apps as $nav_app}}
-                    {{$nav_app}}
-                  {{/foreach}}
-              {{/if}} 
-              </div>
-          </li>                                                    
-              
+            </ul>
+          </li>      
+          {{/if}}
           <li class="nav-item">
            <a href="/siteinfo" class="nav-link">
             <i class="nav-icon fa fa-info-circle"></i>
