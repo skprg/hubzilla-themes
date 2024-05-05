@@ -40,11 +40,8 @@
     </ul>
       {{if $userinfo}}
         <div class="btn-group">
-        <button type="button" class="btn btn-default btn-flat btn-xs">
-          {{$userinfo.name}}       
-        </button>
         <button type="button" class="btn btn-default btn-flat btn-xs dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
-        <span class="sr-only">Toggle Dropdown</span>
+          {{$userinfo.name}}       
         </button>
         <div class="dropdown-menu dropdown-menu-right" role="menu">
         <a class="dropdown-item" href="#">Action</a>
