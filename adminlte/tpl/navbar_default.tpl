@@ -40,7 +40,7 @@
     </ul>
       {{if $userinfo}}
         <div class="btn-group">
-        <button type="button" class="btn btn-default btn-flat btn-xs dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-xs dropdown-toggle dropdown-icon" data-bs-toggle="dropdown">
           {{$userinfo.name}}       
         </button>
         <div class="dropdown-menu dropdown-menu-right" role="menu">
