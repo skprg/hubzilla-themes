@@ -188,7 +188,7 @@
                 {{$nav_app}}
               {{/foreach}}  
               <li class="nav-item">
-                <a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> 
+                <a class="dropdown-item" href="/apps"><i class="nav-icon fa fa-fw fa-plus"></i> 
                 <p>{{$addapps}}</p>
                 </a>
               </li>
