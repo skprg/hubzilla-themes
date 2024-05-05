@@ -246,7 +246,7 @@
 						{{/if}}
 						{{if $item.attachments}}
 						<div class="btn-group">
-							<button type="button" class="btn btn-secondary btn-sm wall-item-like dropdown-toggle" data-bs-toggle="dropdown" id="attachment-menu-{{$item.id}}"><i class="fa fa-paperclip"></i></button>
+							<button type="button" class="btn btn-secondary btn-sm wall-item-like dropdown-bs-toggle" data-bs-toggle="dropdown" id="attachment-menu-{{$item.id}}"><i class="fa fa-paperclip"></i></button>
 							<div class="dropdown-menu">{{$item.attachments}}</div>
 						</div>
 						{{/if}}
