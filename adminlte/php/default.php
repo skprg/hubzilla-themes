@@ -17,14 +17,7 @@
   <?php if(x($page,'nav')) echo $page['nav']; ?>
    <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper px-2 py-2">
-    <div class="row">
-      <div class="col-lg-9 col-sm-12">    
       <?php if(x($page,'content')) echo $page['content']; ?>
-      </div>
-      <div class="col-lg-3 col-sm-none"> 
-      <?php if(x($page,'aside')) echo $page['aside']; ?>
-      </div>
-    </div>
   </div>
   <!-- /.content-wrapper -->
 
