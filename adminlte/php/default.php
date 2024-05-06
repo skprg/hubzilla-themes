@@ -31,6 +31,7 @@
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
+      <?php if(x($page,'aside')) echo $page['aside']; ?>
   </aside>
   <!-- /.control-sidebar -->
 
