@@ -1,4 +1,4 @@
-        <nav class="navbar navbar-expand-lg bg-primary sticky-top p-1" aria-label="Offcanvas navbar large" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary  fixed-top p-1" aria-label="Offcanvas navbar large" data-bs-theme="dark">
             <div class="container-fluid">
                 
                 <button class="btn btn-outline-dark me-2" id="sidebarToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-exchange" aria-hidden="true"></i></button>

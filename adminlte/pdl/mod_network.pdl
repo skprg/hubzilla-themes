@@ -5,6 +5,9 @@
 [/region]
 
 [region=content]
+[widget=activity_order][/widget]
+[widget=activity_filter][/widget]
+[widget=savedsearch][/widget]
 [widget=affinity][/widget]
 $content
 [/region]
