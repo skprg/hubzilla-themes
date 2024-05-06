@@ -107,6 +107,11 @@
         </ul>
       </li>
       {{/if}}
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>      
     </ul>
     {{if $nav.login && !$userinfo}}
       <div class="hstack gap-1 pt-1 pb-1 pr-2">

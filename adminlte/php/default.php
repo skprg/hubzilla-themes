@@ -6,7 +6,7 @@
   <title><?php if(x($page,'title')) echo $page['title'] ?></title>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>
 </head>
-<body class="dark-mode sidebar-mini sidebar-mini-md layout-navbar-fixed layout-fixed">
+<body class="dark-mode sidebar-mini sidebar-mini-md layout-navbar-fixed layout-fixed control-sidebar-push">
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -27,6 +27,12 @@
     </div>
   </div>
   <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
   <footer class="main-footer text-sm">
