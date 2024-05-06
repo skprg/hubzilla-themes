@@ -22,7 +22,7 @@
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark navbar-expand-lg">
+  <aside class="control-sidebar control-sidebar-dark navbar navbar-expand-lg">
     <!-- Control sidebar content goes here -->
       <?php if(x($page,'aside')) echo $page['aside']; ?>
   </aside>
