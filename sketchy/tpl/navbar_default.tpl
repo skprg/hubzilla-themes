@@ -168,15 +168,6 @@
 
                               </ul>
                             </li>
-                            {{if $sel.name}}
-                            {{if $settings_url}}
-                            <li class="nav-item">
-                  		       	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
-		    	            		    <i class="fa fa-fw fa-cog"></i>
-        			               	</a>
-                            </li>
-                    	      {{/if}}
-                        		{{/if}}
                             {{/if}}
                             <li>
                               <button class="navbar-toggler btn btn-link border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
