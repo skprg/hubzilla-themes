@@ -134,8 +134,7 @@
                                   {{/if}}
 
                                   {{if $settings_url}}
-                                  <div id="nav-app-settings-link-wrapper" class="dropdown-item">
-                                    <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+                                  <li><a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="dropdown-item">
                                   {{if $sel.name}}{{$sel.name}} {{/if}} <i class="fa fa-fw fa-cog"></i>
                                   {{/if}}
                                  
