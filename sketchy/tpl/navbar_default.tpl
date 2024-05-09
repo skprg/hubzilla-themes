@@ -94,7 +94,7 @@
                 </div>
                         <ul class="nav">                           
                              <li id="notifications-bt" class="nav-item d-xl-none">
-                      				<a class="nav-link notifications-btn" href="/notifications" style="opacity: 0.5;"><i id="notifications-btn-icon" class="fa fa-exclamation-circle notifications-btn-icon"></i></a>
+                      				<a class="nav-link notifications-bt" href="/notifications" style="opacity: 0.5;"><i id="notifications-btn-icon" class="fa fa-exclamation-circle notifications-btn-icon"></i></a>
                     				 </li>
                             {{if $userinfo}}
 
