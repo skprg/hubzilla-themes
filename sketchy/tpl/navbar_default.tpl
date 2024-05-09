@@ -133,6 +133,12 @@
                                   <li><hr class="dropdown-divider"></li>
                                   {{/if}}
 
+                                  {{if $settings_url}}
+                                  <div id="nav-app-settings-link-wrapper" class="dropdown-item">
+                                    <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link">
+                                  {{if $sel.name}}{{$sel.name}} {{/if}} <i class="fa fa-fw fa-cog"></i>
+                                  {{/if}}
+                                 
                                   {{if $nav.settings}}
                                   <li><a href="{{$nav.settings.0}}" class="dropdown-item">
                                   {{$nav.settings.1}}
