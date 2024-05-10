@@ -174,7 +174,27 @@
             {{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
         {{/foreach}}
         {{/if}}
-         </ul>      
+        {{if $channel_apps.0}}
+              <a class="nav-link" aria-disabled="true">{{$channelapps}}</a>
+          {{foreach $channel_apps as $channel_app}}
+              {{$channel_app}}
+          {{/foreach}}
+        {{/if}}
+
+        {{if $is_owner}}
+          <a class="nav-link" aria-disabled="true">{{$featured_apps}}</a>
+            {{foreach $nav_apps as $nav_app}}
+              {{$nav_app}}
+            {{/foreach}}
+          <a class="nav-link" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
+        {{else}}
+          <a class="nav-link" aria-disabled="true">{{$sysapps}}</a>
+        {{foreach $nav_apps as $nav_app}}
+              {{$nav_app}}
+        {{/foreach}}
+        {{/if}} 
+
+        </ul>      
     </div>
   </aside>
   <!-- /.control-sidebar -->
