@@ -137,6 +137,7 @@
       <hr class="mb-2">
         <ul class="nav flex-column">
         {{if $navbar_apps.0}}
+            <a class="nav-header" aria-disabled="true">{{$pinnedapps}}</a>
         {{foreach $navbar_apps as $navbar_app}}
             {{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
         {{/foreach}}
