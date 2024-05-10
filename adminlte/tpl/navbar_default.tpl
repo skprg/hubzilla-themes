@@ -31,15 +31,6 @@
         </div>
       </li>
       {{if $userinfo}}
-      {{if $sel.name}}
-      {{if $settings_url}}
-      <li class="nav-item">
-        <a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
-        <i class="fa fa-fw fa-cog"></i>
-        </a>
-      </li>
-      {{/if}}
-      {{/if}}
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}}</a>
@@ -74,6 +65,11 @@
             {{$nav.profiles.1}}
             </a></li>
             <li><hr class="dropdown-divider"></li>
+            {{/if}}
+
+            {{if $settings_url}}
+            <li><a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="dropdown-item">
+            {{if $sel.name}}{{$sel.name}} {{/if}} <i class="fa fa-fw fa-cog"></i>
             {{/if}}
 
             {{if $nav.settings}}
