@@ -5,39 +5,6 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="" role="button"><i class="fa fa-bars"></i></a>
       </li>
-       {{if $navbar_apps.0}}
-      {{foreach $navbar_apps as $navbar_app}}
-      <li class="nav-item">
-            {{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
-      </li>
-      {{/foreach}}
-    {{/if}}
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-          {{if $channel_apps.0}}
-              <a class="dropdown-item disabled" aria-disabled="true">{{$channelapps}}</a>
-          {{foreach $channel_apps as $channel_app}}
-              {{$channel_app}}
-          {{/foreach}}
-      {{/if}}
-
-          {{if $is_owner}}
-              <a class="dropdown-item disabled" aria-disabled="true">{{$featured_apps}}</a>
-              <ul class="nav nav-treeview">
-            {{foreach $nav_apps as $nav_app}}
-                      {{$nav_app}}
-                  {{/foreach}}
-              </ul>
-        <a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
-      {{else}}
-          <a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
-        {{foreach $nav_apps as $nav_app}}
-              {{$nav_app}}
-        {{/foreach}}
-      {{/if}} 
-          </div>
-      </li>                                                    
     </ul>
 
     <!-- Right navbar links -->
@@ -142,7 +109,7 @@
       {{/if}}
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fa fa-ellipsis-v"></i>
+          <i class="fa fa-bars"></i>
         </a>
       </li>      
     </ul>
