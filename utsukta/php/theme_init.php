@@ -7,7 +7,7 @@
 head_add_css('/library/datetimepicker/jquery.datetimepicker.css');
 //head_add_css('/library/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css');
 head_add_css('/view/css/default.css');
-head_add_css('/view/theme/utsukta/css/default/bootstrap.min.css');
+//head_add_css('/view/theme/utsukta/css/default/bootstrap.min.css');
 head_add_css('/view/theme/utsukta/css/fork-awesome.min.css');
 head_add_css('/view/theme/utsukta/css/style.css');
 
