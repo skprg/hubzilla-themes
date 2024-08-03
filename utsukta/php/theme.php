@@ -1,13 +1,13 @@
 <?php
 
 /**
- *   * Name: Utsukta Default Dual
- *   * Description: Utsukta hub default theme based on bootstrap
+ *   * Name: Utsukta dual sidebars
+ *   * Description: AdminLTE theme adapted  for Utsukta Hub
  *   * Version: 0.1 alpha
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
- *   * Author: Saiwal
- *   * Maintainer: Saiwal
+ *   * Author: SK
+ *   * Maintainer: SK
  *   * Compat: Hubzilla [*]
  *
  */

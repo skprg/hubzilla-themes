@@ -4,7 +4,7 @@
 </div>
 <div id="collapsed-comments-{{$item.id}}" class="collapsed-comments" style="display: none;">
 {{/if}}
-	<div id="thread-wrapper-{{$item.id}}" class="thread-wrapper{{if $item.toplevel}} {{$item.toplevel}} generic-content-wrapper h-entry pb-4 {{else}} u-comment h-cite {{/if}}" data-b64mids='{{$item.mids}}'>
+	<div id="thread-wrapper-{{$item.id}}" class="thread-wrapper{{if $item.toplevel}} {{$item.toplevel}} generic-content-wrapper h-entry {{else}} u-comment h-cite {{/if}}" data-b64mids='{{$item.mids}}'>
 		<a name="item_{{$item.id}}" ></a>
 		<div class="wall-item-outside-wrapper{{if $item.is_comment}} comment{{/if}}{{if $item.previewing}} preview{{/if}}" id="wall-item-outside-wrapper-{{$item.id}}" >
 			<div class="card clearfix wall-item-content-wrapper{{if $item.is_comment}} comment{{/if}}" id="wall-item-content-wrapper-{{$item.id}}">
@@ -19,15 +19,15 @@
 				</div>
 				{{/if}}
 				{{if $item.title && !$item.event}}
-				<div class="p-2 wall-item-title h3 bg-primary " id="wall-item-title-{{$item.id}}">
-					{{if $item.title_tosource}}{{if $item.plink}}<a href="{{$item.plink.href}}" title="{{$item.title}} ({{$item.plink.title}})" class="{{if $item.is_new}} text-info{{/if}} " rel="nofollow">{{/if}}{{/if}}{{$item.title}}{{if $item.title_tosource}}{{if $item.plink}}</a>{{/if}}{{/if}}
+				<div class="p-2{{if $item.is_new}} bg-success text-white{{/if}} wall-item-title h3" id="wall-item-title-{{$item.id}}">
+					{{if $item.title_tosource}}{{if $item.plink}}<a href="{{$item.plink.href}}" title="{{$item.title}} ({{$item.plink.title}})" rel="nofollow">{{/if}}{{/if}}{{$item.title}}{{if $item.title_tosource}}{{if $item.plink}}</a>{{/if}}{{/if}}
 				</div>
 				{{if ! $item.is_new}}
 				<hr class="m-0">
 				{{/if}}
 				{{/if}}
 				<div class="p-2 wall-item-head {{if $item.is_new && !$item.event && !$item.is_comment}} wall-item-head-new{{/if}}" >
-					<div class="text-end float-end">
+					<div class="text-end float-right">
 						<div class="wall-item-ago opacity-75" id="wall-item-ago-{{$item.id}}">
 							{{if $item.editedtime}}
 							<i class="fa fa-pencil"></i>
@@ -52,7 +52,7 @@
 						<div class="wall-item-pinned" title="{{$item.pinned}}" id="wall-item-pinned-{{$item.id}}"><i class="fa fa-thumb-tack"></i></div>
 						{{/if}}
 					</div>
-					<div class="float-start wall-item-info pe-2" id="wall-item-info-{{$item.id}}" >
+					<div class="float-left wall-item-info pr-2" id="wall-item-info-{{$item.id}}" >
 						<div class="wall-item-photo-wrapper{{if $item.owner_url}} wwfrom{{/if}} h-card p-author" id="wall-item-photo-wrapper-{{$item.id}}">
 							{{if $item.contact_id}}
 							<div class="spinner-wrapper contact-edit-rotator contact-edit-rotator-{{$item.contact_id}}"><div class="spinner s"></div></div>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="wall-item-author">
 						{{if $item.lock}}
-						<div class="float-start dropdown wall-item-lock">
+						<div class="float-left dropdown wall-item-lock">
 							<i class="fa {{if $item.locktype == 2}}fa-envelope-o{{else if $item.locktype == 1}}fa-lock{{else}}fa-unlock{{/if}} lockview{{if $item.privacy_warning}} text-danger{{/if}}" data-bs-toggle="dropdown" title="{{$item.lock}}" onclick="lockview('item',{{$item.id}});" ></i>&nbsp;
 							<div id="panel-{{$item.id}}" class="dropdown-menu"></div>
 						</div>
@@ -103,7 +103,7 @@
 				</div>
 				{{/if}}
 				<div class="p-2 clearfix wall-item-tools">
-					<div class="float-end wall-item-tools-right">
+					<div class="float-right wall-item-tools-right">
 						{{if $item.toplevel && $item.emojis && $item.reactions}}
 						<div class="btn-group">
 							<button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown" id="wall-item-react-{{$item.id}}">
@@ -276,4 +276,24 @@
 	</div>
 {{if $item.comment_lastcollapsed}}
 </div>
-{{/if}}
+{{/if}}div class="card card-widget">
+<div class="card-header">
+<div class="user-block">
+<img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+<span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+<span class="description">Shared publicly - 7:30 PM Today</span>
+</div>
+
+<div class="card-tools">
+<button type="button" class="btn btn-tool" title="Mark as read">
+<i class="far fa-circle"></i>
+</button>
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+<button type="button" class="btn btn-tool" data-card-widget="remove">
+<i class="fas fa-times"></i>
+</button>
+</div>
+
+</div>

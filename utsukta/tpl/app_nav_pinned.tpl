@@ -1,6 +1,5 @@
 <!-- pinned apps in main sidebar menu -->
-    <a id="nav-app-link" href="{{$app.url}}" class="nav-link text-truncate{{if $app.active}} active{{/if}}" style="width: 100%">
- 	{{if $icon}}
-	<i class="fa fa-fw fa-{{$icon}}"></i><span class=""> {{$app.name}}</span>
-	{{/if}}
-    </a>
+  <a href="{{$app.url}}" class="nav-link {{if $app.active}} active{{/if}}">
+  {{if $icon}}<i class="nav-icon fa fa-fw fa-{{$icon}}"></i>{{/if}} {{$app.name}}
+  </a>
+
