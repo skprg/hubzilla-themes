@@ -7,6 +7,7 @@
 head_add_css('/library/datetimepicker/jquery.datetimepicker.css');
 //head_add_css('/library/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css');
 head_add_css('/view/css/default.css');
+head_add_css('/view/theme/utsukta/css/default/bootstrap.min.css');
 head_add_css('/view/theme/utsukta/css/style.css');
 
 #require_once('view/php/theme_init.php');
@@ -61,7 +62,7 @@ $channel = App::get_channel();
 if($channel && file_exists($channel['channel_address'] . '.js'))
 	head_add_js('/' . $channel['channel_address'] . '.js');
 // Add your custom JS files here.
-//head_add_js('/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js');
+head_add_js('/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js');
 head_add_js('/library/bootbox/bootbox.min.js');
 head_add_js('/library/bootstrap-tagsinput/bootstrap-tagsinput.js');
 head_add_js('/library/datetimepicker/jquery.datetimepicker.js');
