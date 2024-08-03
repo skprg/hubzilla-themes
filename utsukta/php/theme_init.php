@@ -62,13 +62,13 @@ $channel = App::get_channel();
 if($channel && file_exists($channel['channel_address'] . '.js'))
 	head_add_js('/' . $channel['channel_address'] . '.js');
 // Add your custom JS files here.
-head_add_js('/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js');
+//head_add_js('/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js');
 head_add_js('/library/bootbox/bootbox.min.js');
 head_add_js('/library/bootstrap-tagsinput/bootstrap-tagsinput.js');
 head_add_js('/library/datetimepicker/jquery.datetimepicker.js');
 head_add_js('/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js');
 head_add_js('/view/theme/redbasic/js/redbasic.js');
 head_add_js('/view/theme/utsukta/js/custom.js');
-//head_add_js('view/theme/adminlte/js/jquery.min.js');
-//head_add_js('view/theme/adminlte/js/bootstrap.bundle.min.js');
+head_add_js('view/theme/utsukta/js/jquery.min.js');
+head_add_js('view/theme/utsukta/js/bootstrap.bundle.min.js');
 //head_add_js('view/theme/adminlte/js/adminlte.min.js');
