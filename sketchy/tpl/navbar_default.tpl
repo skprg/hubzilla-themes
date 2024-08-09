@@ -99,7 +99,7 @@
                             {{if $userinfo}}
 
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
+                              <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
                               <ul class="dropdown-menu dropdown-menu-end">
                                   {{if $is_owner}}
                                   {{foreach $nav.usermenu as $usermenu}}

@@ -1,4 +1,4 @@
-        <nav class="navbar navbar-expand-lg bg-primary sticky-top p-1" aria-label="Offcanvas navbar large" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top sticky-top p-1" aria-label="Offcanvas navbar large" data-bs-theme="dark">
             <div class="container-fluid">
                 
                 <button class="btn btn-outline-dark me-2" id="sidebarToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-exchange" aria-hidden="true"></i></button>
@@ -19,33 +19,31 @@
                                 	{{$navbar_app|replace:'fa':'generic-icons-nav fa'}}
                             </li>
                         		{{/foreach}}
-                        	  {{/if}}
-                            
+                        	{{/if}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                
                                 {{if $channel_apps.0}}
                                     <a class="dropdown-item disabled" aria-disabled="true">{{$channelapps}}</a>
                         		    {{foreach $channel_apps as $channel_app}}
                         		        {{$channel_app}}
                            			{{/foreach}}
-                    		        {{/if}}
+                    		    {{/if}}
 
                                 {{if $is_owner}}
                                     <a class="dropdown-item disabled" aria-disabled="true">{{$featured_apps}}</a>
                                     <ul class="nav nav-treeview">
-                    	        	    	{{foreach $nav_apps as $nav_app}}
-                                        {{$nav_app}}
-                                      {{/foreach}}
+                    	        		{{foreach $nav_apps as $nav_app}}
+                                            {{$nav_app}}
+                                        {{/foreach}}
                                     </ul>
-                              			<a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
-                            		{{else}}
-                            	    	<a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
-                              			{{foreach $nav_apps as $nav_app}}
-                          		        {{$nav_app}}
-                              			{{/foreach}}
-                        		    {{/if}} 
+                        			<a class="dropdown-item" href="/apps"><i class="fa fa-fw fa-plus"></i> {{$addapps}}</a>
+                        		{{else}}
+                        	    	<a class="dropdown-item disabled" aria-disabled="true">{{$sysapps}}</a>
+                        			{{foreach $nav_apps as $nav_app}}
+                        		        {{$nav_app}}
+                        			{{/foreach}}
+                        		{{/if}} 
                                 </div>
                             </li>                                                    
                         </ul>    
@@ -95,11 +93,13 @@
                     </div>
                 </div>
                         <ul class="nav">                           
-
+                             <li id="notifications-bt" class="nav-item d-xl-none">
+                      				<a class="nav-link notifications-bt" href="/notifications" style="opacity: 0.5;"><i id="notifications-btn-icon" class="fa fa-exclamation-circle notifications-btn-icon"></i></a>
+                    				 </li>
                             {{if $userinfo}}
 
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{$userinfo.name}} <img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
+                              <a class="nav-link dropdown-toggle text-primary-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-profile mh-32px rounded-circle" src="{{$userinfo.icon}}"></a>
                               <ul class="dropdown-menu dropdown-menu-end">
                                   {{if $is_owner}}
                                   {{foreach $nav.usermenu as $usermenu}}
@@ -133,6 +133,11 @@
                                   <li><hr class="dropdown-divider"></li>
                                   {{/if}}
 
+                                  {{if $settings_url}}
+                                  <li><a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="dropdown-item">
+                                  {{if $sel.name}}{{$sel.name}} {{/if}} <i class="fa fa-fw fa-cog"></i>
+                                  {{/if}}
+                                 
                                   {{if $nav.settings}}
                                   <li><a href="{{$nav.settings.0}}" class="dropdown-item">
                                   {{$nav.settings.1}}
@@ -163,19 +168,10 @@
 
                               </ul>
                             </li>
-                            {{if $sel.name}}
-                            {{if $settings_url}}
-                            <li class="nav-item">
-                  		       	<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" class="nav-link pe-0 ps-0">
-		    	            		    <i class="fa fa-fw fa-cog"></i>
-        			               	</a>
-                            </li>
-                    	      {{/if}}
-                        		{{/if}}
                             {{/if}}
                             <li>
                               <button class="navbar-toggler btn btn-link border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                              <i class="fa fa-bars" aria-hidden="true"></i>
                               </button>
                             </li>
                         </ul>
