@@ -3,7 +3,7 @@
 
 <div id="contact-entry-wrapper-{{$contact.id}}">
 	<div class="section-subtitle-wrapper clearfix">
-		<div class="float-end">
+		<div class="float-right">
 			{{if $contact.status}}
 			{{foreach $contact.states as $state}}
 			<span class="badge rounded-pill bg-danger text-white me-1" title="">{{$state}}</span>
