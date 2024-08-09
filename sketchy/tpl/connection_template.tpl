@@ -3,7 +3,7 @@
 
 <div id="contact-entry-wrapper-{{$contact.id}}">
 	<div class="section-subtitle-wrapper clearfix">
-		<div class="float-right">
+		<div class="float-end">
 			{{if $contact.status}}
 			{{foreach $contact.states as $state}}
 			<span class="badge rounded-pill bg-danger text-white me-1" title="">{{$state}}</span>
@@ -17,6 +17,7 @@
 			</button>
 
 		</div>
+			{{include "connstatus.tpl" perminfo=$contact.perminfo}}
 		<h3>{{if $contact.public_forum}}<i class="fa fa-comments-o" title="{{$group_label}}"></i>&nbsp;{{/if}}<a href="{{$contact.url}}" title="{{$contact.img_hover}}" >{{$contact.name}}</a>{{if $contact.phone}}&nbsp;<a class="btn btn-outline-secondary btn-sm" href="tel:{{$contact.phone}}" title="{{$contact.call}}"><i class="fa fa-phone connphone"></i></a>{{/if}}</h3>
 	</div>
 	<div class="section-content-tools-wrapper">
@@ -24,7 +25,6 @@
 			<a href="{{$contact.url}}" title="{{$contact.img_hover}}" >
 				<img class="directory-photo-img {{if $contact.classes}}{{$contact.classes}}{{/if}}" src="{{$contact.thumb}}" alt="{{$contact.name}}" loading="lazy" />
 			</a>
-			{{include "connstatus.tpl" perminfo=$contact.perminfo}}
 		</div>
 		<div class="contact-info">
 			{{** if $contact.status}}
