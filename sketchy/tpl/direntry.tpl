@@ -13,6 +13,9 @@
   </div>
 </div>
 
+<div class="card mb-3">
+  <div class="row card-body g-0">
+
 <div class="directory-item{{if $entry.safe}} safe{{/if}}" id="directory-item-{{$entry.hash}}" >
 	<div class="section-subtitle-wrapper clearfix">
 		<div class="directory-actions float-end">
@@ -90,3 +93,6 @@
 		</div>
 	</div>
 </div>
+</div>
+</div>
+
